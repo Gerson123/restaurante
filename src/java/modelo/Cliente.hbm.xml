@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/01/2015 02:52:32 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Cliente" table="cliente" catalog="restaurant" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="Id_Cliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreCliente" type="string">
+            <column name="Nombre_cliente" length="20" />
+        </property>
+        <property name="apellidoCliente" type="java.lang.Boolean">
+            <column name="Apellido_cliente" />
+        </property>
+        <property name="cuentaCliente" type="java.lang.Float">
+            <column name="Cuenta_cliente" precision="12" scale="0" />
+        </property>
+        <property name="nroMesa" type="java.lang.Integer">
+            <column name="Nro_mesa" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="20" />
+        </property>
+        <property name="edadCliente" type="java.lang.Integer">
+            <column name="edad_cliente" />
+        </property>
+    </class>
+</hibernate-mapping>
